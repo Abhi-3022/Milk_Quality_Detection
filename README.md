@@ -1,5 +1,6 @@
 # Milk_Quality_Detection
 Milk being a perishable commodity that must be closely monitored to avoid financial losses and reduce the health risks associated with spoilage.
+
 Python packages : 
 
 ● Sklearn 
@@ -12,28 +13,48 @@ Python packages :
 
 Dataset Features :
 pH: This feature defines pH of the milk, which is in the range of 3 to 9.5.
+
 temperature: This feature defines the temperature of the milk, and its range is from 34'C to 90'C.
+
 taste: This feature defines the taste of the milk and takes the possibles values: 1 (good) or 0 (bad).
+
 odor: This feature defines the odor of the milk and takes the possibles values: 1 (good) or 0 (bad).
+
 fat: This feature defines fat of the milk and takes the possibles values: 1 (good) or 0 (bad).
+
 turbidity: This feature defines the turbidity of the milk and takes the possibles values: 1 (good) or 0 (bad).
+
 colour: This feature defines the color of the milk, which is in the range of 240 to 255.
 
 Preprocessing -
-The first step of preprocessing involved calculating the missing value in the data. It is found that there is not a single missing value for any of the features. 
-Since a computer cannot comprehend the value of the attribute in the problem, label encoding is used to convert the values in this case to category integer values. This dataset's "Grade" feature employs label encoding. 
+The first step of preprocessing involved calculating the missing value in the data. 
+It is found that there is not a single missing value for any of the features. 
+
+Since a computer cannot comprehend the value of the attribute in the problem, label encoding is used to convert the values in this case to category integer values. 
+This dataset's "Grade" feature employs label encoding. 
+
 The final step is to scale the feature values. This is where the Min-Max scaling or z-score scaling is used. Scaling is typically employed to improves model convergence, and prevents certain features from overshadowing others based solely on their magnitude.
+
 Temperature is right-skewed with 2.216739 and color is left-skewed with -1.024902. 
+
 We used PowerTransformer to get rid of skewness. PowerTransformer also has standardize argument. We can set it to True to accomplish our second task: scaling.
 
 Models Applied :
+
 DECISION TREE
+
 SUPPORT VECTOR MACHINE
+
 ARTIFICIAL NEURAL NETWORK
+
 RANDOM FOREST
+
 GRADIENT BOOSTING CLASSIFIER
+
 XGBOOST CLASSIFIER
+
 ADABOOST CLASSIFIER
+
 K-NEAREST NEIGHBOUR
 
 USED GRIDSEARCHCV FOR MODEL TUNING.
@@ -43,7 +64,11 @@ A machine learning algorithm is used to predict milk quality based on influentia
 
 #References
 ● Milk Source Identification and Milk Quality Estimation Using an Electronic Nose and Machine Learning Techniques by Fanglin Mu , Yu Gu , Jie Zhang and Lei Zhang. 
+
 ● Eurasian Journal of Food Science and Technology 2022; Vol: 6, Issue: 2, pp:76-87 76 Using Machine Learning Algorithms to Detect Milk Quality by Ahmet ÇELIK Kütahya Dumlupınar University, Tavşanlı Vocational School, Computer Technologies Department, Kütahya, Türkiye. 
+
 ● EAI Endorsed Transactions on Internet of Things Research Article Milk Quality Prediction Using Machine Learning by Drashti Bhavsar , Yash Jobanputra , Nirmal Keshari Swain , Debabrata Swain. 
+
 ● Proceedings of the First Australian International Conference on Industrial Engineering and Operations Management, Sydney, Australia, December 20-21, 2022 © IEOM Society International Machine Learning Applied to Milk Sample Classification by Mia León and Diego Ossa, Universidad de Lima, Carrera de Ingeniería Industrial Lima, Perú. 
+
 ● International Research Journal of Modernization in Engineering Technology and Science ( Peer-Reviewed, Open Access, Fully Refereed International Journal ) Volume:05/Issue:05/May-2023 Impact Factor- 7.868 International Research Journal of Modernization in Engineering, Technology and Science
